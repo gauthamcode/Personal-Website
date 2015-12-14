@@ -1,0 +1,156 @@
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+span.yellow {
+	color: #ffde00;
+}
+
+.container {
+	max-width: 1024px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.nav {
+	padding-top: 75px;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+.nav ul li {
+	padding: 20px;
+	list-style: none;
+	font-size: 16px;
+}
+
+.nav ul li a, .nav ul li a:visited {
+	color: #000;
+	padding: 5px;
+	text-decoration: none;
+	transition: 0.2s color;
+}
+
+.nav ul li a:hover {
+	color: #ffde00;
+	transition: 0.2s color;
+}
+
+.nav ul li a.active {
+	color: #000;
+	border-bottom: 5px solid #ffde00;
+}
+
+/* MAIN SECTION */
+
+.main, .main .container {
+	height: 100%;
+}
+
+.main {
+	position: relative;
+}
+
+.main_text {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 160px;
+	margin-bottom: 0;
+	font-size: 45px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+
+.button {
+	text-align: center;
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+	border: 3px solid #000;
+	border-radius: 50px;
+	padding: 10px 80px;	
+	font-size: 15px;
+	display: block;
+    width: 15%;
+    margin: 0 auto;
+    transition: 0.3s background;
+}
+
+.button:hover {
+	color: #fff;
+	background: #000;
+	transition: 0.3s background;
+}
+
+.cow {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.cow img {
+  align-self: flex-end;
+}
+
+@media (max-width:640px) {
+
+	.container {
+		padding: 0 25px;
+	}
+
+	/* MOVILE NAVIGATION */
+	.nav ul {
+		justify-content: center;
+	}
+
+	.nav ul li {
+		font-size: 18px;
+		margin-left: 0;
+		padding: 20px;
+	}
+
+	/* MOBILE MAIN */
+	h1 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.button {
+		font-size: 12px;
+		width: 30%;
+	}
+}
