@@ -98,12 +98,12 @@ p {
 	text-decoration: none;
 	border: 3px solid #000;
 	border-radius: 50px;
-	padding: 10px 80px;	
+	padding: 10px 80px;
 	font-size: 15px;
 	display: block;
-    width: 15%;
-    margin: 0 auto;
-    transition: 0.3s background;
+  width: 15%;
+  margin: 0 auto;
+  transition: 0.3s background;
 }
 
 .button:hover {
@@ -113,18 +113,19 @@ p {
 }
 
 .cow {
-  display: flex;
-  justify-content: center;
+	height: 280px; /* Change this height to change the size of the cow */
+	background: url(../images/cow.png) bottom center no-repeat;
+	background-size: contain;
+}
+
+.com img {
+  display: table-cell;
+  vertical-align: middle;
   position: absolute;
   bottom: 0;
-  width: 100%;
-}
-.cow img {
-  align-self: flex-end;
 }
 
 @media (max-width:640px) {
-
 	.container {
 		padding: 0 25px;
 	}
