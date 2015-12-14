@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gautham SK.</title>
 	<meta name="description" content="Designer &amp; Front-End Developer">
-	<meta name="keywords" content="designer, web developer, graphic designer, website, developer, order website, creative director, creative designer, print, design, logo designer, web designer, geek"
 	<meta name="author" content="Gautham SK">
 
 	<!-- FONT -->
@@ -19,43 +18,26 @@
 
 	<!-- FAVICON -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
-
-	<!-- JQUERY -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-	<!-- GOOGLE ANALYTICS -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-71350653-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-
 </head>
 <body>
 	<div class="main">
 		<div class="container">
+
 			<div class="nav">
 				<ul>
 					<li><a href="index.html" class="active">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
+
 			<div class="main_text">
 				<h1>Hey there! I'm <span class="yellow">Gautham SK</span>, a digital designer &amp; web developer.</h1>
 			</div>
-			<div class="arrow-down">
-				<a href="#work"><img src="images/icons/arrow-down.svg"></a></div>
-			</div>
+
 		</div> <!-- end container -->
 	</div> <!-- end main -->
 
-	<a id="work"></a>
 	<div class="work">
 		<div class="work_1">
 			<div class="work_flex container">
@@ -63,7 +45,7 @@
 					<h2>Cyno Social</h2>
 					<p>The good folks at Cyno approached me  to redesign their website with a more modern look and feel.</p>
 				</div>
-				<img src="images/work/Cyno_Social.png" class="image image_1">
+				<img src="images/Cyno_Social.png" class="image image_1">
 			</div>
 		</div>
 
@@ -73,7 +55,7 @@
 					<h2>Health App</h2>
 					<p>A health app to connect you and your doctor seemlessly. Designed the UI/UX from the ground up.</p>
 				</div>
-				<img src="images/work/Health_App.png" class="image image_2">
+				<img src="images/Health_App.png" class="image image_2">
 			</div>
 		</div>
 
@@ -83,41 +65,9 @@
 					<h2>Gridate Branding</h2>
 					<p>Gridate is a web-design agency. My role was to come up with a stellar branding and website for the agency.</p>
 				</div>
-				<img src="images/work/Gridate_Branding.png" class="image image_3">
+				<img src="images/Gridate_Branding.png" class="image image_3">
 			</div>
 		</div>
-	</div><!-- end work -->
-
-	<div class="footer">
-		<div class="container">
-			<p>Let's chat. Hit me up any time!</p>
-			<h2><a href="mailto:hi@gauthamsk.com">hi@gauthamsk.com</a></h2>
-			<div class="social_links">	
-				<a href="https://twitter.com/GauthamCode" target="_blank"><img src="images/social_links/twitter.svg"></a>
-				<a href="dribbble.html"><img src="images/social_links/dribbble.svg"></a>
-				<a href="https://github.com/gauthamcode/" target="_blank"><img src="images/social_links/github.svg"></a>
-				<a href="https://www.instagram.com/gauthamcode/" target="_blank"><img src="images/social_links/instagram.svg"></a>
-			</div>
-		</div>
-	</div>
-
-	<!-- SMOOTH SCROLL -->
-	<script type="text/javascript">
-	$(function() {
-  		$('a[href*=#]:not([href=#])').click(function() {
-    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      			var target = $(this.hash);
-     			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      			if (target.length) {
-        			$('html,body').animate({
-          				scrollTop: target.offset().top
-        			}, 1000);
-        			return false;
-      			}
-    		}
-  		});
-	});
-
-	</script>
+		</div><!-- end work -->
 </body>
 </html>
