@@ -1,10 +1,3 @@
-/***************
-COLOR SCHEME.
-
-Yellow: #ffde00
-Black: #000
-***************/
-
 html, body {
 	height: 100%;
 	padding: 0px;
@@ -29,7 +22,6 @@ img {
 	margin: 0 auto;
 }
 
-
 /* TYPOGRAPHY */
 
 h2 {
@@ -38,9 +30,9 @@ h2 {
 }
 
 p {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 22px;
 }
 
 /* NAVIGATION */
@@ -72,20 +64,22 @@ p {
 }
 
 .nav ul li a:hover {
-	color: #ffde00;
+	color: #fff;
 	transition: 0.2s color;
 }
 
 .nav ul li a.active {
 	color: #000;
-	border-bottom: 5px solid #ffde00;
+	border-bottom: 5px solid #fff;
 }
+
 
 /* MAIN SECTION */
 
 .main {
-	background: url("../images/background/bg.jpg") center center no-repeat; 	
-	background-size: auto;
+	background-color: #ffde00;
+	/*background: url("../images/about_bg.jpg") center center no-repeat; 	*/
+	background-size: cover;
 	height: 100vh;
 }
 
@@ -112,66 +106,63 @@ p {
 	width: 30px;
 }
 
-span.yellow {
+/* ABOUT SECTION */
+
+.about h2 {
+	padding-top: 120px;
+	padding-bottom: 20px;
+	margin: 0;
+}
+
+.about p {
+	margin-bottom: 100px;
+}
+
+.about a {
 	color: #ffde00;
+	text-decoration: none;
 }
 
-/* WORK SECTION */
+/* CONTENT */
 
-.work_1,
-.work_2,
-.work_3 {
-	color: #fff;
-	min-height: 350px;
+img {
+	height: 50px;
+	width: auto;
 }
 
-/* WORK SECTION BACKGROUND COLOUR */
-.work_1 {
-	background: #fc7373;
+h2 {
+	margin-bottom: 40px;
 }
 
-.work_2 {
-	background: #7376fc;
+.design, .code, .pizza, .coffee, .music, .doughnut, .bugs, .deadline, .school, .photoshop, .illustrator, .sublime,
+.aftereffects {
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
 }
 
-.work_3 {
-	background: #e4e4e4;
-	color: black;
+.icons {
+	margin-bottom: 80px;
 }
 
-/* TOP MARGINS OF THE SECTION*/
-.image_1 {
-	margin-top: 100px;
+.icons p {
+	display: block;
 }
 
-.image_2 {
-	margin-top: 30px;
+/* LET'S TALK BUSINESS */
+
+a {
+	text-decoration: none;
 }
 
-.image_3 {
-	margin-top: 50px;
-}
-
-/* LAYOUT */
-
-.work_flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.reverse {
-	flex-direction: row-reverse;
-}
-
-.info {
-	width: 30%;
-	text-align: left;
-}
-
-.info_reverse {
-	width: 30%;
-	text-align: right;
+.business {
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	background: #ffde00;
+	margin: 0;
+	padding: 15px;
 }
 
 /* FOOTER */
@@ -182,7 +173,6 @@ span.yellow {
 	background: url("../images/background/footer_bg.jpg") center center no-repeat;
 	background-size: auto;
 	text-align: center;
-	
 }
 
 .footer p {
@@ -215,6 +205,7 @@ span.yellow {
 	width: auto;
 }
 
+
 @media (max-width:640px) {
 
 	.container {
@@ -241,33 +232,15 @@ span.yellow {
 		height: 60%;
 	}
 
-	/* MOBILE WORK*/
-	p {
-		font-size: 13px;
+	/* CONTENT */
+	
+	h2, p {
 		text-align: center;
 	}
 
-	h2 {
-		padding-top: 40px;
-		font-size: 20px;
-		text-align: center;
-	}
-
-	.work_flex {
-		flex-direction: column;
-	}
-
-	.info {
-		width: 70%;
-	}
-
-	.info_reverse {
-		width: 70%;
-		text-align: center;
-	}
-
-	.reverse {
-		flex-direction: column;
+	.design, .code, .pizza, .coffee, .music, .doughnut, .bugs, .deadline, .school, .photoshop, .illustrator, .sublime,
+	.aftereffects {
+   	 width: 49%;
 	}
 
 	/* FOOTER MOBILE */
