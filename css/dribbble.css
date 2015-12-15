@@ -22,6 +22,7 @@ span.yellow {
 
 .container {
 	max-width: 1024px;
+	height: 100%;
 	padding: 0 20px;
 	margin: 0 auto;
 }
@@ -72,6 +73,8 @@ span.yellow {
 
 .main {
 	position: relative;
+	height: 100%;
+    min-height: 500px;
 }
 
 .main_text {
@@ -79,7 +82,7 @@ span.yellow {
 }
 
 h1 {
-	margin-top: 160px;
+	padding-top: 10%;
 	margin-bottom: 0;
 	font-size: 45px;
 	font-weight: 400;
@@ -88,6 +91,7 @@ h1 {
 p {
 	font-size: 18px;
 	font-weight: 400;
+	line-height: 24px;
 	margin-bottom: 40px;
 }
 
@@ -101,9 +105,9 @@ p {
 	padding: 10px 80px;
 	font-size: 15px;
 	display: block;
-  width: 15%;
-  margin: 0 auto;
-  transition: 0.3s background;
+	width: 15%;
+	margin: 0 auto;
+	transition: 0.3s background;
 }
 
 .button:hover {
@@ -113,16 +117,16 @@ p {
 }
 
 .cow {
-	height: 280px; /* Change this height to change the size of the cow */
-	background: url(../images/cow.png) bottom center no-repeat;
-	background-size: contain;
-}
-
-.com img {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.cow img {
+  align-self: flex-end;
 }
 
 @media (max-width:640px) {
@@ -138,20 +142,24 @@ p {
 	.nav ul li {
 		font-size: 18px;
 		margin-left: 0;
-		padding: 20px;
+		padding: 15px;
 	}
 
 	/* MOBILE MAIN */
 	h1 {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	p {
 		font-size: 16px;
+		margin-bottom: 15px;
 	}
 
 	.button {
 		font-size: 12px;
 		width: 30%;
+	}
+	.cow img {
+  		width: 70%;
 	}
 }
